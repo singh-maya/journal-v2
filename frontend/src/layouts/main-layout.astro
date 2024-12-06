@@ -1,0 +1,19 @@
+---
+import SideBar from '../components/sidebar/sidebar'
+const { title, activePage } = Astro.props;
+---
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+</head>
+<body class="bg-gradient-to-tr from-[#ACB4FA] from-0% via-[#FFD6D6] via-37% to-[#CED9FF] to-84%">
+    <div class="flex flex-row w-screen">
+        <SideBar activePage={activePage}/>
+        <div class="justify-self-center w-screen">
+         <slot/>
+        </div>
+    </div>
+</body>
+</html>
