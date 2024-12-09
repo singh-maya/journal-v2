@@ -2,11 +2,17 @@
 import MainLayout from "../layouts/main-layout.astro"
 import Calendar_Overview from "../components/calendar/calendar";
 import JournalOverview from "../components/journal-entry/journal-overview";
+import SongOfTheWeek from "../components/song-of-the-week/songWeek";
+import MemoryRevisit from "../components/memory/memory-tile";
 ---
 
 <MainLayout title="Overview" activePage="overview">
     <div class="grid grid-cols-2 gap-14 mx-14 my-14 justify-items-center">
-        <Calendar_Overview/>
+        <div>
+            <Calendar_Overview/>
+            <SongOfTheWeek/>
+            <MemoryRevisit/>
+        </div>
         <JournalOverview/>
     </div>
 </MainLayout>
