@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .react-calendar {
-    @apply bg-white bg-opacity-30 w-80 h-fit rounded-[40px] shadow-lg px-6 py-6 text-[#453B47]
+    @apply bg-white bg-opacity-30 w-[350px] h-fit rounded-[40px] shadow-lg px-6 py-6 text-[#453B47]
 }
 
 .react-calendar--doubleView {
@@ -40,12 +40,15 @@
 }
 
 .react-calendar__navigation {
-    @apply flex h-fit font-bold text-base mb-6
+    @apply flex h-fit font-bold text-base mb-6 justify-center
 }
 
 .react-calendar__navigation button {
-    min-width: 44px;
-    background: none;
+    @apply bg-none min-w-11
+}
+
+.react-calendar__navigation__next-button{
+    @apply flex items-center justify-end
 }
 
 .react-calendar__navigation button:disabled {

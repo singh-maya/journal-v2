@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Calendar from 'react-calendar';
 import '../../styles/Calendar.css';
+import {ChevronLeft, ChevronRight} from "lucide-react";
 
 export default function Calendar_Overview() {
 	const [value, setValue] = useState(new Date());
@@ -11,8 +12,8 @@ export default function Calendar_Overview() {
 			value={value}
 			next2Label={null}
 			prev2Label={null}
-			nextLabel={">"}
-			prevLabel="<"
+			nextLabel={<ChevronRight/>}
+			prevLabel={<ChevronLeft />}
 		/>
 	);
 }
